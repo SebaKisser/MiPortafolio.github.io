@@ -1,31 +1,21 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <style>
-            body{
-                background-color: #e0f7fa;
-                font-family: Arial, sans-serif;
-                margin: 0;
-                padding: 0;
-            }
-            h1{
-                color: #007BFF;
-            }
-        </style>
+        <link rel="stylesheet" href="./style.css" />
         <title>MI PRIMER PORTAFOLIO</title>
     </head>
     <body>
         <header>
-            <nav>
+            <nav class="menu-fijo">
                 <ul>
-                    <a href="#acerca-de-mi">Acerca de mi</a>
-                    <a href="#habilidades">Habilidades</a>
-                    <a href="#experiencia">Experiencia</a>
-                    <a href="#proyectos">Proyectos</a>
-                    <a href="#contacto">Contacto</a>
+                    <a class="menu-item" href="#acerca-de-mi">Acerca de mi</a>
+                    <a class="menu-item" href="#habilidades">Habilidades</a>
+                    <a class="menu-item" href="#experiencia">Experiencia</a>
+                    <a class="menu-item" href="#proyectos">Proyectos</a>
+                    <a class="menu-item" href="#contacto">Contacto</a>
                 </ul>
             </nav>
-            <h1>SEBASTIAN KISSER</h1>
+            <h1 class="animacion-titulo">SEBASTIAN KISSER</h1>
             <img src="foto.jpg" width="200" height="200">
             <h2>WEB DEVELOPER</h2>    
         </header>
@@ -51,8 +41,8 @@
                     <li>Git</li>
                     <li>Metodologías ágiles</li>
                 </ul>
-            </section id="experiencia">
-            <section>
+            </section>
+            <section id="experiencia">
                 <h2><b>Experiencia laboral</b></h2>
                 <ul>
                     <h2>Empresa</h2>
@@ -74,19 +64,33 @@
                 </ul>
             </section>
             <section id="contacto">
-                <h2><b>Contacto</b></h2>
+                <h2>Contacto</h2>
                 <ul>
                     <li>Email: skf.sokc@gmail.com</li>
                     <li>Telefono: 123-456-789</li>
                     <li>
                         Redes Sociales
-                        <ul>
+                        <ul id="sociales">
                             <li>
+                                <img src="instagram.png">
                                 <a href="https://www.instagram.com/seba_kisser/">Instagram</a>
+                                <img src="facebook.png">
+                                <a href="https://www.facebook.com/Qizexo/">Facebook</a>
+                                <img src="github.png">
+                                <a href="https://github.com/SebaKisser">GitHub</a>
                             </li>
                         </ul>
                     </li>
                 </ul>
+            </section>
+            <section id="contactame">
+                <h2>Forma de Contacto</h2>
+                <form action="#" method="post">
+                    <input type="text" name="nombre" placeholder="Nombre" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <textarea name="mensaje" placeholder="Mensaje" required></textarea>
+                    <input type="submit" value="Enviar">
+                </form>
             </section>
         </main>    
         <footer>
